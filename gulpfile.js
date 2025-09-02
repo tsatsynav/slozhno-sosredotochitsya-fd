@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const mediaquery = require('postcss-combine-media-query');
-const cssnano = require('cssnano'); 
+const cssnano = require('cssnano');
 
 function serve() {
   browserSync.init({
@@ -18,23 +18,19 @@ function serve() {
 
 function html() {
   return gulp.src('src/**/*.html')
-        .pipe(plumber())
-				.pipe(gulp.dest('dist/'))
-        .pipe(browserSync.reload({stream: true}));
+    .pipe(plumber())
+    .pipe(gulp.dest('dist/'))
+    .pipe(browserSync.reload({ stream: true }));
 }
 
 function css() {
-  const plugins = [
-    autoprefixer(),
-    mediaquery(),
-    cssnano()
-  ];
+  const plugins = [autoprefixer(), mediaquery(), cssnano()];
   return gulp.src('src/blocks/**/*.css')
-        .pipe(plumber())
-        .pipe(concat('bundle.css'))
-        .pipe(postcss(plugins))
-				.pipe(gulp.dest('dist/'))
-        .pipe(browserSync.reload({stream: true}));
+    .pipe(plumber())
+    .pipe(concat('bundle.css'))
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('dist/'))
+    .pipe(browserSync.reload({ stream: true }));
 }
 
 function scripts() {
