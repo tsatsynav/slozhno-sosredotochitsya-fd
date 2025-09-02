@@ -1,0 +1,37 @@
+{
+  "name": "slozhno-sosredotochitsya-fd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Hello!'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp",
+    "fixAndBuild": "npm run fixAll && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsatsynav/slozhno-sosredotochitsya-fd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsatsynav/slozhno-sosredotochitsya-fd/issues"
+  },
+  "homepage": "https://github.com/tsatsynav/slozhno-sosredotochitsya-fd#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^6.0.0",
+    "gulp": "^5.0.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.23.1"
+  }
+}
