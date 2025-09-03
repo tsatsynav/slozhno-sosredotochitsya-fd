@@ -4,9 +4,46 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-background: #fff1f7;
+    --page-title-color: #ffc2e6;
+    --page-color: #353430;
+    --accent-color: #ff8dcb;
+    --hover-button-color: rgba(50, 49, 45, 0.4);
+    --background-image: url(../images/cover-image-light.png);
+    /* <<<------ REUSE ------>>> */
+    --button-color: var(--page-color);
+    --border-color: var(--page-color);
+    --text-shadow: #ff0070;
+    --page-title-shadow: var(--accent-color);
+    --section-title-color: var(--page-color);
+    --article-title-color: var(--page-color);
+    --article-title-background: var(--accent-color);
+    --box-shadow: var(--accent-color);
+    --link-shadow: var(--accent-color);
+  }
+}
+
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --page-background: #fff1f7;
+  --page-title-color: #ffc2e6;
+  --page-color: #353430;
+  --accent-color: #ff8dcb;
+  --hover-button-color: rgba(50, 49, 45, 0.4);
+  --background-image: url(../images/cover-image-light.png);
+  /* <<<------ REUSE ------>>> */
+  --button-color: var(--page-color);
+  --border-color: var(--page-color);
+  --text-shadow: #ff0070;
+  --page-title-shadow: var(--accent-color);
+  --section-title-color: var(--page-color);
+  --article-title-color: var(--page-color);
+  --article-title-background: var(--accent-color);
+  --box-shadow: var(--accent-color);
+  --link-shadow: var(--accent-color);
+}
+
+:root.theme-light .top-bar-rec {
+  display: none;
 }
