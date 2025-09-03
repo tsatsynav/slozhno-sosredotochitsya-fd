@@ -1,14 +1,18 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  block-size: 100%;
+}
+
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
+  block-size: 100%;
   margin: 0 auto;
 }
 
