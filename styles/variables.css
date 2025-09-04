@@ -11,6 +11,7 @@
   --page-font-color: #f1b2ce;
   --page-title-color: #db00ff;
   --page-title-shadow: #ff0070;
+  --section-title-color: #ff0070;
   --article-title-color: #000028;
   --article-title-background: #ff0070;
   /* BACKGROUND & COLORS */
@@ -19,4 +20,6 @@
   --box-shadow: #ff0070;
   --accent-color: #ff0070;
   --border-color: #ff0070;
+  --button-color: #ff0070;
+  
 }
