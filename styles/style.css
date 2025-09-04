@@ -21,6 +21,7 @@
 @media (width >= 768px) {
   .page {
     gap: 60px;
+    background-size: 214% 100%;
   }
 }
 
@@ -47,6 +48,12 @@
     padding-inline-start: 20px;
     padding-inline-end: 20px;
   }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* <<<------ 1.2.titles ------>>> */
@@ -170,8 +177,9 @@
 /* <<<------ 2.1.header ------>>> */
 .header {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
-  min-block-size: 668px;
   padding: 10px;
 }
 
@@ -180,6 +188,13 @@
     min-block-size: 1024px;
     grid-template-rows: 1fr min-content 1fr;
     padding: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    block-size: 100vh;
+    min-block-size: 1024px;
   }
 }
 
@@ -211,8 +226,7 @@
 }
 
 .header__theme-menu {
-  padding-block-start: 53px;
-  padding-block-end: 65px;
+  grid-column: 1 / -1;
   justify-self: self-end;
   align-self: center;
 }
@@ -228,7 +242,7 @@
 
 .header__theme-menu-list {
   display: flex;
-  gap: 13px;
+  gap: 10px;
   justify-content: center;
   flex-direction: column;
 }
@@ -240,8 +254,8 @@
 }
 
 .header__title {
-  padding-block-end: 52px;
-  letter-spacing: -3px;
+  grid-column: 1 / -1;
+  font-size: 116px;
 }
 
 @media (width >= 768px) {
@@ -254,6 +268,7 @@
 }
 
 .header__text {
+  grid-column: 1 / -1;
   align-self: center;
   justify-self: end;
 }
@@ -266,7 +281,6 @@
 }
 
 /* <<<------ 2.2.main ------>>> */
-/* <<<------ 2.2.1.difficulties ------>>> */
 
 .main {
   display: flex;
@@ -299,11 +313,7 @@
   }
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+/* <<<------ 2.2.1.difficulties ------>>> */
 
 .difficulties__list {
   display: flex;
@@ -379,7 +389,7 @@
 
 @media (width >= 768px) {
   .gallery {
-    gap: 10px;
+    gap: 18px;
   }
 }
 
@@ -393,7 +403,7 @@
   .gallery__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px 21px;
+    gap: 15px 22px;
   }
 
   .gallery__item:first-of-type,
@@ -416,6 +426,12 @@
   min-block-size: 668px;
   align-items: center;
   justify-content: center;
+}
+
+@media (width >= 768px) {
+  .footer {
+    min-block-size: 1024px;
+  }
 }
 
 .footer__title {
