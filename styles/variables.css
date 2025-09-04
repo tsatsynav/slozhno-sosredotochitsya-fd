@@ -5,9 +5,17 @@
 
 :root {
   /* PAGE VARIABLES */
+  /* FONTS */
   --page-font-family: "IBM Plex mono", monospace;
   --page-font-size: 18px;
   --page-font-color: #f1b2ce;
+  --page-title-color: #db00ff;
+  --page-title-shadow: #ff0070;
+  --article-title-color: #000028;
+  --article-title-background: #ff0070;
+  /* BACKGROUND & COLORS */
   --page-background-color: #000028;
   --page-background-image: url(../images/cover-image-dark.png);
+  --box-shadow: #ff0070;
+  --accent-color: #ff0070;
 }
