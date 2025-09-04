@@ -1,10 +1,11 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+/* <<<------ GLOBAL STYLES ------>>> */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/*ADDED*/
 html {
   block-size: 100%;
 }
@@ -12,6 +13,7 @@ html {
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
+  /*ADDED*/
   block-size: 100%;
   margin: 0 auto;
 }
@@ -35,6 +37,13 @@ ul {
 picture {
   margin: 0;
   padding: 0;
+}
+
+img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 button,

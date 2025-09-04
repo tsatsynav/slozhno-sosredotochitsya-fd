@@ -4,7 +4,7 @@
   переключая тему
 */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --page-background: ;
     --page-title-color: #db00ff;
@@ -12,7 +12,7 @@
     --accent-color: #ff0070;
     --hover-button-color: ;
     --background-image: url(../images/cover-image-dark.png);
-    /* <<<------ REUSE ------>>> */
+    
     --button-color: var();
     --border-color: var();
     --text-shadow: ;
@@ -23,7 +23,7 @@
     --box-shadow: var();
     --link-shadow: var();
   }
-}
+} */
 
 :root.theme-dark {
   --page-background: ;
