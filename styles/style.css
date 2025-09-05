@@ -47,6 +47,13 @@
   }
 }
 
+.section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-column: 1 / -1;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -117,7 +124,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-button-color);
+  outline: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button:focus {
@@ -197,7 +204,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding-block-start: 10px;
   padding-block-end: 10px;
 }
@@ -206,6 +214,13 @@
   .header {
     padding-block-start: 20px;
     padding-block-end: 20px;
+    min-block-size: 1024px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    min-block-size: 768px;
   }
 }
 
@@ -354,13 +369,6 @@
   }
 }
 
-.difficulties__list {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 @media (width >= 768px) {
   .difficulties__list {
     grid-column: 2 / -1;
@@ -370,7 +378,7 @@
 
 @media (width >= 768px) {
   .card {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
   }
 }
 
@@ -378,19 +386,6 @@
 
 .reasons__title {
   grid-column: 1 / -1;
-}
-
-.reasons__list {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-@media (width >= 768px) {
-  .reasons__list {
-    grid-column: 1/-1;
-  }
 }
 
 @media (width >= 1024px) {
@@ -437,12 +432,6 @@
   }
 }
 
-.upgrade__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 /* <<<------ 2.2.4.gallery ------>>> */
 
 .gallery {
@@ -462,9 +451,6 @@
 }
 
 .gallery__list {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
   gap: 5px;
 }
 
@@ -492,8 +478,21 @@
   display: flex;
   flex-shrink: 0;
   block-size: 100vh;
+  min-block-size: 668px;
   align-items: center;
   justify-content: center;
+}
+
+@media (width >= 768px) {
+  .footer {
+    min-block-size: 1024px;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer {
+    min-block-size: 768px;
+  }
 }
 
 .footer__title {

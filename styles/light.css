@@ -6,7 +6,7 @@
     --page-font-color: #353430;
     --page-title-color: #ffc2e6;
     --page-title-shadow: var(--accent-color);
-    --section-title-color: var(--accent-color);
+    --section-title-color: var(--page-font-color);
     --article-title-color: #000028;
     --article-title-background: var(--accent-color);
     /* <<<------ design & decoration ------>>> */
@@ -14,30 +14,38 @@
     --page-background-image: url(../images/cover-image-light.png);
     --box-shadow: var(--accent-color);
     --link-shadow: var(--accent-color);
-    --border-color: var(--accent-color);
-    --button-color: var(--accent-color);
+    --border-color: var(--page-font-color);
+    --button-color: var(--page-font-color);
+
+    .top-bar-rec {
+      display: none;
+    }
   }
 }
 
 :root.theme-light {
   /* <<<------ main color accent ------>>> */
-    --accent-color: #ff8dcb;
-    /* fonts */
-    --page-font-color: #353430;
-    --page-title-color: #ffc2e6;
-    --page-title-shadow: var(--accent-color);
-    --section-title-color: var(--accent-color);
-    --article-title-color: #000028;
-    --article-title-background: var(--accent-color);
-    /* <<<------ design & decoration ------>>> */
-    --page-background-color: #fff1f7;
-    --page-background-image: url(../images/cover-image-light.png);
-    --box-shadow: var(--accent-color);
-    --link-shadow: var(--accent-color);
-    --border-color: var(--accent-color);
-    --button-color: var(--accent-color);
+  --accent-color: #ff8dcb;
+  /* fonts */
+  --page-font-color: #353430;
+  --page-title-color: #ffc2e6;
+  --page-title-shadow: var(--accent-color);
+  --section-title-color: var(--page-font-color);
+  --article-title-color: #000028;
+  --article-title-background: var(--accent-color);
+  /* <<<------ design & decoration ------>>> */
+  --page-background-color: #fff1f7;
+  --page-background-image: url(../images/cover-image-light.png);
+  --box-shadow: var(--accent-color);
+  --link-shadow: var(--accent-color);
+  --border-color: var(--page-font-color);
+  --button-color: var(--page-font-color);
+
+  .top-bar-rec {
+    display: none;
+  }
 }
 
-:root.theme-light .top-bar-rec {
+/* :root.theme-light .top-bar-rec {
   display: none;
-}
+} */

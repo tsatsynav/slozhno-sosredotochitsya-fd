@@ -18,4 +18,8 @@
   --link-shadow: var(--accent-color);
   --border-color: var(--accent-color);
   --button-color: var(--accent-color);
+
+  .top-bar-rec {
+    display: flex;
+  }
 }
