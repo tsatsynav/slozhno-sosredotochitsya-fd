@@ -1,25 +1,21 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
-  /* PAGE VARIABLES */
-  /* FONTS */
+  /* <<<------ VARIABLES ------>>> */
+  /* <<<------ main color accent ------>>> */
+  --accent-color: #ff0070;
+  /* fonts */
   --page-font-family: "IBM Plex mono", monospace;
   --page-font-size: 18px;
   --page-font-color: #f1b2ce;
   --page-title-color: #db00ff;
-  --page-title-shadow: #ff0070;
-  --section-title-color: #ff0070;
+  --page-title-shadow: var(--accent-color);
+  --section-title-color: var(--accent-color);
   --article-title-color: #000028;
-  --article-title-background: #ff0070;
-  /* BACKGROUND & COLORS */
+  --article-title-background: var(--accent-color);
+  /* <<<------ design & decoration ------>>> */
   --page-background-color: #000028;
   --page-background-image: url(../images/cover-image-dark.png);
-  --box-shadow: #ff0070;
-  --accent-color: #ff0070;
-  --border-color: #ff0070;
-  --button-color: #ff0070;
-  
+  --box-shadow: var(--accent-color);
+  --link-shadow: var(--accent-color);
+  --border-color: var(--accent-color);
+  --button-color: var(--accent-color);
 }

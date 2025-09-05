@@ -1,47 +1,41 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 @media (prefers-color-scheme: light) {
   :root {
-    --page-background: #fff1f7;
-    --page-title-color: #ffc2e6;
-    --page-color: #353430;
+    /* <<<------ main color accent ------>>> */
     --accent-color: #ff8dcb;
-    --hover-button-color: rgba(50, 49, 45, 0.4);
-    --background-image: url(../images/cover-image-light.png);
-    /* <<<------ REUSE ------>>> */
-    --button-color: var(--page-color);
-    --border-color: var(--page-color);
-    --text-shadow: #ff0070;
+    /* fonts */
+    --page-font-color: #353430;
+    --page-title-color: #ffc2e6;
     --page-title-shadow: var(--accent-color);
-    --section-title-color: var(--page-color);
-    --article-title-color: var(--page-color);
+    --section-title-color: var(--accent-color);
+    --article-title-color: #000028;
     --article-title-background: var(--accent-color);
+    /* <<<------ design & decoration ------>>> */
+    --page-background-color: #fff1f7;
+    --page-background-image: url(../images/cover-image-light.png);
     --box-shadow: var(--accent-color);
     --link-shadow: var(--accent-color);
+    --border-color: var(--accent-color);
+    --button-color: var(--accent-color);
   }
 }
 
 :root.theme-light {
-  --page-background: #fff1f7;
-  --page-title-color: #ffc2e6;
-  --page-color: #353430;
-  --accent-color: #ff8dcb;
-  --hover-button-color: rgba(50, 49, 45, 0.4);
-  --background-image: url(../images/cover-image-light.png);
-  /* <<<------ REUSE ------>>> */
-  --button-color: var(--page-color);
-  --border-color: var(--page-color);
-  --text-shadow: #ff0070;
-  --page-title-shadow: var(--accent-color);
-  --section-title-color: var(--page-color);
-  --article-title-color: var(--page-color);
-  --article-title-background: var(--accent-color);
-  --box-shadow: var(--accent-color);
-  --link-shadow: var(--accent-color);
+  /* <<<------ main color accent ------>>> */
+    --accent-color: #ff8dcb;
+    /* fonts */
+    --page-font-color: #353430;
+    --page-title-color: #ffc2e6;
+    --page-title-shadow: var(--accent-color);
+    --section-title-color: var(--accent-color);
+    --article-title-color: #000028;
+    --article-title-background: var(--accent-color);
+    /* <<<------ design & decoration ------>>> */
+    --page-background-color: #fff1f7;
+    --page-background-image: url(../images/cover-image-light.png);
+    --box-shadow: var(--accent-color);
+    --link-shadow: var(--accent-color);
+    --border-color: var(--accent-color);
+    --button-color: var(--accent-color);
 }
 
 :root.theme-light .top-bar-rec {
