@@ -15,6 +15,7 @@
     --box-shadow: var(--accent-color);
     --link-shadow: var(--accent-color);
     --border-color: var(--page-font-color);
+    --border-color-hover: rgba(50, 49, 45, 0.4);
     --button-color: var(--page-font-color);
 
     .top-bar-rec {
@@ -39,13 +40,10 @@
   --box-shadow: var(--accent-color);
   --link-shadow: var(--accent-color);
   --border-color: var(--page-font-color);
+  --border-color-hover: rgba(50, 49, 45, 0.4);
   --button-color: var(--page-font-color);
 
   .top-bar-rec {
     display: none;
   }
 }
-
-/* :root.theme-light .top-bar-rec {
-  display: none;
-} */

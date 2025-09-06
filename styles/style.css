@@ -124,7 +124,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-color);
+  outline: 1px solid var(--border-color-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -132,7 +132,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--button-color);
+  border-bottom: 1px solid var(--border-color);
   outline: none;
 }
 
@@ -225,11 +225,11 @@
 }
 
 .top-bar-rec {
+  display: flex;
   position: absolute;
   top: 10px;
   right: 18px;
   text-transform: uppercase;
-  display: flex;
   align-items: center;
   gap: 10px;
   color: var(--accent-color);
